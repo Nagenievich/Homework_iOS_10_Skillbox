@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9172CB4C264FCA2A00779260 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9172CB4B264FCA2A00779260 /* TableViewCell.swift */; };
+		9172CB532660251900779260 /* CalculatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9172CB522660251900779260 /* CalculatorController.swift */; };
 		918E0E6926382F8100D8F5F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918E0E6826382F8100D8F5F1 /* AppDelegate.swift */; };
 		918E0E6B26382F8100D8F5F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918E0E6A26382F8100D8F5F1 /* SceneDelegate.swift */; };
 		918E0E6D26382F8100D8F5F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918E0E6C26382F8100D8F5F1 /* ViewController.swift */; };
@@ -14,9 +16,12 @@
 		918E0E7326382F8100D8F5F1 /* Homework_iOS_10.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 918E0E7126382F8100D8F5F1 /* Homework_iOS_10.xcdatamodeld */; };
 		918E0E7526382F8700D8F5F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 918E0E7426382F8700D8F5F1 /* Assets.xcassets */; };
 		918E0E7826382F8700D8F5F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 918E0E7626382F8700D8F5F1 /* LaunchScreen.storyboard */; };
+		918E0E89263B274500D8F5F1 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918E0E88263B274500D8F5F1 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9172CB4B264FCA2A00779260 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		9172CB522660251900779260 /* CalculatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorController.swift; sourceTree = "<group>"; };
 		918E0E6526382F8100D8F5F1 /* Homework_iOS_10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework_iOS_10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		918E0E6826382F8100D8F5F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		918E0E6A26382F8100D8F5F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +31,7 @@
 		918E0E7426382F8700D8F5F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		918E0E7726382F8700D8F5F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		918E0E7926382F8700D8F5F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		918E0E88263B274500D8F5F1 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +67,10 @@
 				918E0E6826382F8100D8F5F1 /* AppDelegate.swift */,
 				918E0E6A26382F8100D8F5F1 /* SceneDelegate.swift */,
 				918E0E6C26382F8100D8F5F1 /* ViewController.swift */,
+				9172CB522660251900779260 /* CalculatorController.swift */,
 				918E0E6E26382F8100D8F5F1 /* Main.storyboard */,
+				9172CB4B264FCA2A00779260 /* TableViewCell.swift */,
+				918E0E88263B274500D8F5F1 /* CollectionViewCell.swift */,
 				918E0E7426382F8700D8F5F1 /* Assets.xcassets */,
 				918E0E7626382F8700D8F5F1 /* LaunchScreen.storyboard */,
 				918E0E7926382F8700D8F5F1 /* Info.plist */,
@@ -140,8 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				918E0E89263B274500D8F5F1 /* CollectionViewCell.swift in Sources */,
 				918E0E6D26382F8100D8F5F1 /* ViewController.swift in Sources */,
+				9172CB532660251900779260 /* CalculatorController.swift in Sources */,
 				918E0E6926382F8100D8F5F1 /* AppDelegate.swift in Sources */,
+				9172CB4C264FCA2A00779260 /* TableViewCell.swift in Sources */,
 				918E0E7326382F8100D8F5F1 /* Homework_iOS_10.xcdatamodeld in Sources */,
 				918E0E6B26382F8100D8F5F1 /* SceneDelegate.swift in Sources */,
 			);
