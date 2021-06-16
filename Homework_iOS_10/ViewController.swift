@@ -12,20 +12,16 @@ struct Meetup {
     var main = ""
     var elements:[String]
     var icon:[String]
-    let swicthView = UISwitch(frame: .zero)
-    swicthView.setOn(false, animated: true)
-    swicthView.tag = indexPath.row
-    swicthView.addTarget(self, action: #selector(self.switchChanged(_:)), for: .valueChanged)
+    var text:[String]
     
 }
 
 class MeetupFabric{
     static func meetups() -> [Meetup] {
         return [
-            Meetup(main: "Main", elements: ["Avia"], icon: ["✈️"],),
-            Meetup(main: "Main", elements: ["Avia", "Wi-Fi", "Bluetooth", "Mobile", "Modem"], icon: ["✈️", "📶", "📳", "📱", "📡"]),
-            Meetup(main: "Sound and notification", elements: ["Notification", "Sounds", "Do Not Disturb", "Screen"], icon: ["❗️", "🔈", "🤫", "📺"]),
-            Meetup(main: "General", elements: ["General", "Control Centre", " Display", "Home Screen", "Accessibility", "Wallaper"], icon: ["⚙️", "🖥", "📱", "📺", "🚹", "🌃"])
+            Meetup(main: "Main", elements: ["Avia", "Mobile", "Bluetooth", "Wi-Fi", "Modem"], icon: ["✈️", "📶", "📳", "📱", "📡"], text: ["YOTA", "ON"]),
+            Meetup(main: "Sound and notification", elements: ["Notification", "Sounds", "Do Not Disturb", "Screen"], icon: ["❗️", "🔈", "🤫", "📺"], text: [""]),
+            Meetup(main: "General", elements: ["General", "Control Centre", " Display", "Home Screen", "Accessibility", "Wallaper"], icon: ["⚙️", "🖥", "📱", "📺", "🚹", "🌃"], text: [""])
         ]
     }
 }
@@ -46,7 +42,7 @@ class ViewController: UIViewController {
 }
 
 //table view
-extension ViewController: UITableViewDataSource {
+extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return meetups.count
@@ -62,30 +58,37 @@ extension ViewController: UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TableCell") as! TableViewCell
-        let name = meetups[indexPath.section].elements[indexPath.row]
-        let icon = meetups[indexPath.section].icon[indexPath.row]
-        //cell
-        cell.labelName.text = name
-        cell.icon.text = icon
+        if indexPath.row == 0 {
+         
+            let cell = tableView.dequeueReusableCell(withIdentifier: "SwitchCell") as! TableViewCell
+            let name = meetups[indexPath.section].elements[indexPath.item]
+            let icon = meetups[indexPath.section].icon[indexPath.item]
+            cell.labelName.text = name
+            cell.icon.text = icon
+                    return cell
+                }
+                else if indexPath.row == 1 && indexPath.row == 2 {
         
-        //switch
-        let swicthView = UISwitch(frame: .zero)
-        swicthView.setOn(false, animated: true)
-        swicthView.tag = indexPath.row
-        swicthView.addTarget("Avia", action: #selector(self.switchChanged(_:)), for: .valueChanged)
-               
-        
-        
-        return cell
+                    let cell = tableView.dequeueReusableCell(withIdentifier: "TableCell") as! TableViewCell
+                    let name = meetups[indexPath.section].elements[indexPath.item]
+                    let icon = meetups[indexPath.section].icon[indexPath.item]
+                    let text = meetups[indexPath.section].text[indexPath.row]
+                    cell.labelName.text = name
+                    cell.icon.text = icon
+                    cell.secondLabel.text = text
+                    return cell
+                }
+                else {
+
+                    let cell = tableView.dequeueReusableCell(withIdentifier: "OtherCell") as! TableViewCell
+                    let name = meetups[indexPath.section].elements[indexPath.row]
+                    let icon = meetups[indexPath.section].icon[indexPath.row]
+                    cell.labelName.text = name
+                    cell.icon.text = icon
+                    return cell
+                }
     }
     
-    @objc func switchChanged(_ sender: UISwitch!) {
-           
-           print("Table row switch Changed \(sender.tag)")
-           print("The switch is \(sender.isOn ? "ON" : "OFF")")
-           
-       }
 }
 
 //collection view
