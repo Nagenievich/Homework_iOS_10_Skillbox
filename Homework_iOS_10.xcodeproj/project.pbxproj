@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9124C70326A0F4F0003207FC /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9124C70126A0F4F0003207FC /* SwitchTableViewCell.swift */; };
+		9124C70D26A1CA6A003207FC /* TextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9124C70C26A1CA6A003207FC /* TextTableViewCell.swift */; };
 		9172CB4C264FCA2A00779260 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9172CB4B264FCA2A00779260 /* TableViewCell.swift */; };
 		9172CB532660251900779260 /* CalculatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9172CB522660251900779260 /* CalculatorController.swift */; };
 		918E0E6926382F8100D8F5F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918E0E6826382F8100D8F5F1 /* AppDelegate.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9124C70126A0F4F0003207FC /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
+		9124C70C26A1CA6A003207FC /* TextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTableViewCell.swift; sourceTree = "<group>"; };
 		9172CB4B264FCA2A00779260 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		9172CB522660251900779260 /* CalculatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorController.swift; sourceTree = "<group>"; };
 		918E0E6526382F8100D8F5F1 /* Homework_iOS_10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework_iOS_10.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,8 +73,10 @@
 				918E0E6C26382F8100D8F5F1 /* ViewController.swift */,
 				9172CB522660251900779260 /* CalculatorController.swift */,
 				918E0E6E26382F8100D8F5F1 /* Main.storyboard */,
-				9172CB4B264FCA2A00779260 /* TableViewCell.swift */,
 				918E0E88263B274500D8F5F1 /* CollectionViewCell.swift */,
+				9172CB4B264FCA2A00779260 /* TableViewCell.swift */,
+				9124C70C26A1CA6A003207FC /* TextTableViewCell.swift */,
+				9124C70126A0F4F0003207FC /* SwitchTableViewCell.swift */,
 				918E0E7426382F8700D8F5F1 /* Assets.xcassets */,
 				918E0E7626382F8700D8F5F1 /* LaunchScreen.storyboard */,
 				918E0E7926382F8700D8F5F1 /* Info.plist */,
@@ -149,7 +155,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9124C70D26A1CA6A003207FC /* TextTableViewCell.swift in Sources */,
 				918E0E89263B274500D8F5F1 /* CollectionViewCell.swift in Sources */,
+				9124C70326A0F4F0003207FC /* SwitchTableViewCell.swift in Sources */,
 				918E0E6D26382F8100D8F5F1 /* ViewController.swift in Sources */,
 				9172CB532660251900779260 /* CalculatorController.swift in Sources */,
 				918E0E6926382F8100D8F5F1 /* AppDelegate.swift in Sources */,
